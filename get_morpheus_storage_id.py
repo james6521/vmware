@@ -6,7 +6,7 @@ requests.packages.urllib3.disable_warnings()
 MORPHEUS_TOKEN = morpheus['morpheus']['apiAccessToken']
 MORPHEUS_HEADERS = {"Authorization": "Bearer " + (MORPHEUS_TOKEN)}
 VERIFY_SSL_CERT = False
-MORPHEUS_HOST = "192.168.100.160"
+MORPHEUS_HOST = "192.168.100.240"
 
 MAX_API_RESULTS=1000000
 MORPHEUS_DATASTORE_OPTION_LIST_NAME = "Morpheus vCenter Datastores"
