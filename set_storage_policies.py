@@ -12,8 +12,8 @@ VCENTER_TOKEN = ""
 VCENTER_URL = "https://" + VCENTER_HOST + "/rest/vcenter"
 VERIFY_SSL_CERT = False
 MAX_API_RESULTS=1000000
-DATASTORE_OPTION_LIST_NAME = "vCenter Datastores"
-DATASTORE_POLICIES_LIST_NAME = "vCenter Storage Policies"
+DATASTORE_OPTION_LIST_NAME = "VMware Datastores"
+DATASTORE_POLICIES_LIST_NAME = "VMware Storage Policies"
 
 
 def get_vcenter_auth_token(uid, pwd):
