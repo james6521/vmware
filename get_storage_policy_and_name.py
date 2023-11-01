@@ -8,8 +8,8 @@ requests.packages.urllib3.disable_warnings()
 MORPHEUS_TOKEN = morpheus['morpheus']['apiAccessToken']
 VCENTER_HEADERS = {"Content-Type": "application/json"}
 VCENTER_HOST = "192.168.100.200"
-VCENTER_USER = "administrator@akdov.local" # sys.argv[1]
-VCENTER_PASSWORD = "Pa55word$" # sys.argv[2]
+VCENTER_USER = sys.argv[1]
+VCENTER_PASSWORD = sys.argv[2]
 VERIFY_SSL_CERT = False
 MORPHEUS_HOST = "192.168.100.161"
 MORPHEUS_HEADERS = {"Authorization": "Bearer " + (MORPHEUS_TOKEN)}
