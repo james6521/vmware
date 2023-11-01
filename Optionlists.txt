@@ -1,0 +1,56 @@
+Option Lists
+
+VMware Clouds
+    Manual and realtime
+    Translation Script:
+
+    for (var x=0; x < data.length; x++) {
+   results.push({name: data[x].name, value:data[x].id});
+}
+
+
+VMware Datastores
+    Manual and realtime
+    Translation Script:
+
+    for (var x=0; x < data.length; x++) {
+    var foundPolicy = false;
+    for (var p=0; p< data[x].compatible_policies.length; p++) {
+//        console.log(data[x].compatible_policies[p] + " == " + input.vcenterPolicy)
+        if (data[x].compatible_policies[p] == input.vcenterPolicy && data[x].cloud_id == input.cloud) {
+            foundPolicy=true
+        }
+    }
+    if (foundPolicy){    
+        results.push({name: data[x].name, value:data[x].morpheus_id});
+    } 
+}
+
+
+VMware Storage Policies
+    Manual and realtime
+    Translation Script:
+
+    for (var x=0; x < data.length; x++) {
+  results.push({name: data[x].name, value:data[x].policy});
+}
+
+
+
+Inputs
+
+VMware Clouds
+
+    Field Name : cloud
+    Option List : VMware Clouds
+
+VMware Datastores
+
+    Field Name : morpheusVCDatastore
+    Option List : VMware Datastores
+
+VMwate Policies
+
+    Field Name : vcenterPolicy
+    Option List : VMware Storage Policies
+
