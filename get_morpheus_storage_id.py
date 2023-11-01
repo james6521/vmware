@@ -11,7 +11,7 @@ MORPHEUS_HOST = "192.168.100.160"
 MAX_API_RESULTS=1000000
 MORPHEUS_DATASTORE_OPTION_LIST_NAME = "Morpheus vCenter Datastores"
 DATASTORE_POLICIES_LIST_NAME = "vCenter Storage Policies"
-CLOUD_OPTION_LIST_NAME = "Clouds"
+CLOUD_OPTION_LIST_NAME = "VMware Clouds"
 
 def get_morpheus_option_list_data_by_name(option_list_name):
     url = "https://%s/api/library/option-type-lists" % (MORPHEUS_HOST)
